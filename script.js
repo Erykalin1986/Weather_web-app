@@ -5,6 +5,7 @@ const root = document.getElementById("root");
 const popup = document.getElementById("popup");
 const textInput = document.getElementById("text-input");
 const form = document.getElementById("form");
+const closeBtn = document.getElementById("close");
 
 let store = {
   city: "Nizhny Novgorod",
@@ -186,5 +187,6 @@ const handleSubmit = (e) => {
 
 form.addEventListener("submit", handleSubmit);
 textInput.addEventListener("input", handleInput);
+closeBtn.addEventListener("click", togglePopupClass);
 
 fetchData();
