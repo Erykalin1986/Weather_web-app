@@ -1,5 +1,5 @@
 const link =
-  "http://api.weatherstack.com/current?access_key=7dd70cdbaf4e8828ed2b40c382277b0c";
+  "http://api.weatherstack.com/current?access_key=7dd70cdbaf4e8828ed2b40c382277b0c&unit=m";
 
 const root = document.getElementById("root");
 const popup = document.getElementById("popup");
@@ -65,12 +65,12 @@ const fetchData = async () => {
         },
         windSpeed: {
           title: "wind speed",
-          value: `${windSpeed} km/h`,
+          value: `${windSpeed} m/s`,
           icon: "wind.png",
         },
         pressure: {
           title: "pressure",
-          value: `${pressure} %`,
+          value: `${pressure} hPa`,
           icon: "gauge.png",
         },
         uvIndex: {
